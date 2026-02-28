@@ -31,10 +31,6 @@ void showFilmModal(BuildContext context, Film film) {
 
                 const SizedBox(height: 10),
 
-                Image.network(film.movieBanner),
-
-                const SizedBox(height: 10),
-
                 Text("Director: ${film.director}"),
                 Text("Producer: ${film.producer}"),
                 Text("Release: ${film.releaseDate}"),

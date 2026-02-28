@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
 import '../services/ghibli_service.dart';
 import '../models/film.dart';
-import '../widgets/film_modal.dart';
-import '../widgets/ghibli_background.dart';
+import 'film_detail_screen.dart';
 
 class FilmsScreen extends StatelessWidget {
   final GhibliService _service = GhibliService();
@@ -39,12 +38,11 @@ class FilmsScreen extends StatelessWidget {
                       ),
                     );
                   },
-                  child: card,
-                );
-              },
-            );
-          },
-        ),
+                ),
+              );
+            },
+          );
+        },
       ),
     );
   }
